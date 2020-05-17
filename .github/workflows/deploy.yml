@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,14 +17,10 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build --if-present
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: SamKirkland/FTP-Deploy-Action@3.1.0
+      - name: 'FTP Deploy'
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          local-dir: dist/
-          ftp-server: ${{ secrets.FTP_HOST }}
-          ftp-username: ${{ secrets.FTP_USER }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          localDir: dist
+          host: ${{ secrets.FTP_HOST }}
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
