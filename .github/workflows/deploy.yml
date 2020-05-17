@@ -17,6 +17,13 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm run build --if-present
+      - name: start deployment
+        uses: bobheadxi/deployments@v0.4.1
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: release
       - name: 'FTP Deploy'
         uses: sebastianpopp/ftp-action@releases/v2
         with:
@@ -24,3 +31,11 @@ jobs:
           host: ${{ secrets.FTP_HOST }}
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+      - name: update deployment status
+        uses: bobheadxi/deployments@v0.4.1
+        if: always()
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
