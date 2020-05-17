@@ -1,0 +1,5 @@
+{
+    "name": "@igi2k/parcel-plugin-loader",
+    "version": "1.0.0",
+    "main": "parcel-loader.js"
+}

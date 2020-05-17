@@ -1,0 +1,24 @@
+{
+  "name": "rum-exchange",
+  "version": "1.0.0",
+  "description": "https://rum.or.mg",
+  "scripts": {
+    "start": "parcel app/index.html app/icon.png app/*.html -p 8080",
+    "prebuild": "rimraf dist",
+    "build": "parcel build app/index.html app/icon.png app/*.html app/.htaccess"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igi2k/rum.or.mg.git"
+  },
+  "devDependencies": {
+    "@igi2k/parcel-plugin-loader": "file:parcel-plugin",
+    "parcel-bundler": "1.12.4",
+    "rimraf": "3.0.2"
+  },
+  "browserslist": [
+    "safari 13",
+    "chrome 80"
+  ]
+}
