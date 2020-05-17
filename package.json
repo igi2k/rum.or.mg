@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@igi2k/parcel-plugin-loader": "file:parcel-plugin",
+    "less": "3.11.1",
     "parcel-bundler": "1.12.4",
     "rimraf": "3.0.2"
   },
