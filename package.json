@@ -13,7 +13,9 @@
     "url": "https://github.com/igi2k/rum.or.mg.git"
   },
   "devDependencies": {
+    "@babel/core": "7.9.6",
     "@igi2k/parcel-plugin-loader": "file:parcel-plugin",
+    "@types/mithril": "2.0.3",
     "less": "3.11.1",
     "parcel-bundler": "1.12.4",
     "rimraf": "3.0.2"
@@ -21,5 +23,8 @@
   "browserslist": [
     "safari 13",
     "chrome 80"
-  ]
+  ],
+  "dependencies": {
+    "mithril": "2.0.4"
+  }
 }
