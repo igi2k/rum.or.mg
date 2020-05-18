@@ -1,5 +1,6 @@
 import m from "mithril";
 import { LatestAddition } from "./latest-addition.jsx";
+import "./index.less";
 
 const url = "https://script.google.com/macros/s/AKfycbyp9zClExazW8GFLfK5FUkVNHsFnAqzr_3y5Wfq/exec";
 

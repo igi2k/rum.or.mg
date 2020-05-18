@@ -1,4 +1,5 @@
 import m from "mithril";
+import "./latest-addition.less"
 
 export function LatestAddition({ attrs }) {
     const { url } = attrs;
