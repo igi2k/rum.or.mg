@@ -25,6 +25,10 @@
             { "objectsInObjects": false }
         ],
         "key-spacing": ["error"],
-        "keyword-spacing": ["error"]
+        "keyword-spacing": ["error"],
+        "mithril/jsx-curly-spacing": ["error", {
+            "when": "always",
+            "children": true
+        }]
     }
 }

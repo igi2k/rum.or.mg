@@ -11,8 +11,8 @@ export function LatestAddition({ attrs }) {
         view: () => (
             <section id="latest">
                 { item ? (<>
-                    <div>{item.name}</div>
-                    <img referrerPolicy="no-referrer" src={item.image}></img>
+                    <div>{ item.name }</div>
+                    <img referrerPolicy="no-referrer" src={ item.image }></img>
                 </>) : null }
             </section>
         )

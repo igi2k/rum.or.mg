@@ -9,7 +9,7 @@ function Layout() {
         view: () => (
             <>
                 <h1>Zdarec</h1>
-                <LatestAddition url={url} />
+                <LatestAddition url={ url } />
             </>
         )
     };
