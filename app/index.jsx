@@ -12,7 +12,7 @@ function Layout() {
                 <LatestAddition url={url} />
             </>
         )
-    }
+    };
 }
 
-m.mount(document.body, Layout)
+m.mount(document.body, Layout);

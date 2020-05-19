@@ -16,6 +16,8 @@
     "@babel/core": "7.9.6",
     "@igi2k/parcel-plugin-loader": "file:parcel-plugin",
     "@types/mithril": "2.0.3",
+    "eslint": "7.0.0",
+    "eslint-plugin-mithril": "0.1.1",
     "less": "3.11.1",
     "parcel-bundler": "1.12.4",
     "rimraf": "3.0.2"

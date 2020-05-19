@@ -1,5 +1,5 @@
 import m from "mithril";
-import "./latest-addition.less"
+import "./latest-addition.less";
 
 export function LatestAddition({ attrs }) {
     const { url } = attrs;
@@ -10,11 +10,11 @@ export function LatestAddition({ attrs }) {
         },
         view: () => (
             <section id="latest">
-            { item ? (<>
-                <div>{item.name}</div>
-                <img referrerPolicy="no-referrer" src={item.image}></img>
-            </>) : null }
+                { item ? (<>
+                    <div>{item.name}</div>
+                    <img referrerPolicy="no-referrer" src={item.image}></img>
+                </>) : null }
             </section>
         )
-    }
+    };
 }

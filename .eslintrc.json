@@ -1,0 +1,30 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:mithril/recommended"
+    ],
+    "rules": {
+        "indent": ["error", 4,
+            { "MemberExpression": 0 }
+        ],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
+        "object-curly-spacing": ["error", "always", 
+            { "objectsInObjects": false }
+        ],
+        "key-spacing": ["error"],
+        "keyword-spacing": ["error"]
+    }
+}
