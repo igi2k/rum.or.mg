@@ -9,7 +9,7 @@ export function LatestAddition({ attrs }) {
             item = await m.request(url);
         },
         view: () => (
-            <section id="latest">
+            <section id="latest-addition">
                 { item ? (<>
                     <div>{ item.name }</div>
                     <img referrerPolicy="no-referrer" src={ item.image }></img>
