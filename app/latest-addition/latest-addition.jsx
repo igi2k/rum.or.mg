@@ -35,7 +35,7 @@ function Card({ attrs }) {
             <div class="column">
                 <div>
                     <div>{ item.name }</div>
-                    <div>{ item.abv * 100 }% </div>
+                    <div>{ +(item.abv * 100).toFixed(3) }% </div>
                     <div data-country={ item.country }></div>
                 </div>
             </div>
